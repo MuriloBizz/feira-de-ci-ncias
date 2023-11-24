@@ -1,0 +1,24 @@
+// C++ code
+
+int buttonPin = 8;
+int estadoButton = 7;
+
+void setup()
+{
+  pinMode(buttonPin, INPUT);
+}
+
+void loop()
+{
+  
+estadoButton = digitalRead(buttonPin);
+  if (estadoButton == HIGH) {
+
+  for (int i; i < 100000000000; i++){
+  
+  tone(2, 150, 120);
+  delay(200);
+  tone(2, 220, 120);
+  }
+  }
+  }
